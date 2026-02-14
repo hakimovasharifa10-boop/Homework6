@@ -1,4 +1,5 @@
 $family: "Inter", sans-serif;
+$padding: 20px 10%;
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@ $family: "Inter", sans-serif;
   font-family: $family;
 }
 nav {
-  padding: 20px 10%;
+  padding: $padding;
   border-bottom: 1px solid grey;
   background: linear-gradient(to right, #fdfeff 20%, #e6f0ff 80%);
 }
@@ -43,7 +44,7 @@ nav {
   margin-top: 5px;
 }
 .sec1 {
-  padding: 20px 10%;
+  padding: $padding;
   display: flex;
   justify-content: space-between;
 }
@@ -67,7 +68,7 @@ nav {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.about {
+@mixin button {
   padding: 20px 30px;
   background-color: #217bf4;
   color: white;
@@ -75,13 +76,14 @@ nav {
   border: none;
   font-size: 18px;
 }
+.about {
+  @include button;
+}
 .invite {
-  padding: 20px 30px;
-  border: 1px solid #217bf4;
+  @include button;
   color: #217bf4;
   background-color: transparent;
-  font-size: 18px;
-  border-radius: 10px;
+  border: 1px solid #217bf4;
 }
 .btns_sec1 {
   display: flex;
@@ -179,31 +181,33 @@ nav {
 .card3 {
   width: 380px;
   box-shadow: none;
+  h6 {
+    color: #217bf4;
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 34px;
+    margin: 14px 0px;
+  }
+  p {
+    color: #656464;
+    line-height: 24px;
+  }
+  button {
+    padding: 14px 20px;
+    background-color: #217bf4;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
 }
-.card3 h6 {
-  color: #217bf4;
-  font-size: 18px;
-}
-.card3 h3 {
-  font-size: 34px;
-  margin: 14px 0px;
-}
-.card3 p {
-  color: #656464;
-  line-height: 24px;
-}
-.card3 button {
-  padding: 14px 20px;
-  background-color: #217bf4;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 60px;
-}
+
 .sec4 {
   padding: 20px 10%;
   background: linear-gradient(to right, #f4f9ff 50%);
+  margin: 40px 0px;
 }
 .member {
   width: 580px;
@@ -213,17 +217,18 @@ nav {
   background-color: white;
   display: flex;
   gap: 20px;
+  h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  p {
+    color: #656464;
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
-.member h5 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 30px;
-}
-.member p {
-  color: #656464;
-  font-size: 18px;
-  margin-top: 10px;
-}
+
 .members {
   display: flex;
   flex-wrap: wrap;
@@ -249,17 +254,18 @@ nav {
 }
 .sec5 {
   padding: 20px 10%;
+  h6 {
+    color: #217bf4;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  h3 {
+    font-size: 40px;
+    text-align: center;
+  }
 }
-.sec5 h6 {
-  color: #217bf4;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 40px;
-}
-.sec5 h3 {
-  font-size: 40px;
-  text-align: center;
-}
+
 .when {
   color: #656464;
   font-size: 18px;
@@ -375,14 +381,84 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.sec7 h6{
-    color: #217bf4;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
+.sec7 h6 {
+  color: #217bf4;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-.sec7 h3{
-    font-size: 40px;
-    text-align: center;
-    margin: 10px 0px;
+.sec7 h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0px;
+}
+.foot {
+  background-color: #2b2b39;
+  padding: 50px 10%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.bot_foot {
+  background-color: #20202d;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.rows {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.row h6 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.row p {
+  font-size: 16px;
+  line-height: 40px;
+  color: #e7e7e7;
+}
+.input {
+  width: 30%;
+}
+.input h6 {
+  font-size: 22px;
+  font-weight: 400;
+  width: 50%;
+}
+.input p {
+  font-size: 18px;
+  width: 90%;
+  margin: 20px 0px;
+}
+input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.embut button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  position: absolute;
+  right: 70px;
+}
+.embut {
+  position: relative;
+  margin-top: 30px;
+}
+
+.active p {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.active p:hover {
+  background-color: #134d99;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
 }
