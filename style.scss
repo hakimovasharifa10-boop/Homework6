@@ -294,58 +294,95 @@ nav {
   right: 64px;
   bottom: 130px;
 }
-.men{
-    display: flex;
-    justify-content: space-between;
-    margin: 60px 0px;
+.men {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px;
 }
-.boy3{
-    right: 50px;
-    bottom: 110px;
+.boy3 {
+  right: 50px;
+  bottom: 110px;
 }
-.boy4{
-    right: 50px;
-    bottom: 110px; 
+.boy4 {
+  right: 50px;
+  bottom: 110px;
 }
-.man h4{
-    font-size: 24px;
-    margin-top: 10px;
+.man h4 {
+  font-size: 24px;
+  margin-top: 10px;
 }
-.man p{
-    margin-top: 10px;
+.man p {
+  margin-top: 10px;
 }
-.sec6{
-    padding: 20px 10% 0px;
-    background-color: #cae2ff;
-    display: flex;
-    justify-content: space-between;
+.sec6 {
+  padding: 20px 10% 0px;
+  background-color: #cae2ff;
+  display: flex;
+  justify-content: space-between;
 }
-.phone{
-    width: 600px;
+.phone {
+  width: 600px;
 }
-.app{
-    display: flex;
-    gap: 20px;
-    margin-top: 40px;
-    margin-left: -30px;
+.app {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  margin-left: -30px;
 }
-.apps{
-    width: 140px;
-    height: 50px;
-    margin-top: 22px;
+.apps {
+  width: 140px;
+  height: 50px;
+  margin-top: 22px;
 }
-.left_sec6 h6{
+.left_sec6 h6 {
+  color: #217bf4;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.left_sec6 h3 {
+  font-size: 36px;
+  width: 60%;
+  margin: 20px 0px;
+}
+.chap {
+  font-size: 18px;
+  color: #656464;
+  width: 60%;
+}
+.sec7 {
+  padding: 20px 10%;
+}
+.line {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.line p {
+  font-size: 20px;
+  font-weight: 600;
+  width: 60%;
+  margin-top: 10px;
+}
+.continue {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #656464;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+.readings {
+  display: flex;
+  justify-content: space-between;
+}
+.sec7 h6{
     color: #217bf4;
     font-size: 20px;
-    margin-top: 50px;
+    text-align: center;
+    margin-top: 20px;
 }
-.left_sec6 h3{
-    font-size: 36px;
-    width: 60%;
-    margin: 20px 0px;
-}
-.chap{
-    font-size: 18px;
-    color: #656464;
-    width: 60%;
+.sec7 h3{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0px;
 }
