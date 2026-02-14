@@ -215,35 +215,102 @@ nav {
   gap: 20px;
 }
 .member h5 {
- font-size: 24px;
- font-weight: 600;
- margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
 }
-.member p{
-    color: #656464;
-    font-size: 18px;
-    margin-top: 10px;
+.member p {
+  color: #656464;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .members {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.sec4 h6{
-    color: #217bf4;
-    font-size: 18px;
-    text-align: center;
+.sec4 h6 {
+  color: #217bf4;
+  font-size: 18px;
+  text-align: center;
 }
-.sec4 h2{
-    font-size: 40px;
-    text-align: center;
-    margin: 10px 0px;
+.sec4 h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0px;
 }
-.wise{
-    color: #656464;
-    font-size: 20px;
-    width: 42%;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 40px;
+.wise {
+  color: #656464;
+  font-size: 20px;
+  width: 42%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.sec5 {
+  padding: 20px 10%;
+}
+.sec5 h6 {
+  color: #217bf4;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.sec5 h3 {
+  font-size: 40px;
+  text-align: center;
+}
+.when {
+  color: #656464;
+  font-size: 18px;
+  width: 42%;
+  text-align: center;
+  margin: 30px auto;
+  line-height: 28px;
+}
+.active {
+  width: 500px;
+  height: 70px;
+  padding: 20px 30px;
+  background-color: #c8d8ec;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  color: #2f2c4a;
+  align-items: center;
+  margin: 0 auto;
+}
+.man {
+  width: 270px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.boy {
+  position: absolute;
+  right: 64px;
+  bottom: 130px;
+}
+.men{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+.boy3{
+    right: 50px;
+    bottom: 110px;
+}
+.boy4{
+    right: 50px;
+    bottom: 110px; 
+}
+.man h4{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.man p{
+    margin-top: 10px;
 }
