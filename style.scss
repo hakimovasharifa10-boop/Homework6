@@ -87,6 +87,45 @@ nav {
   display: flex;
   gap: 20px;
 }
-main {
+.sec1 {
   background: linear-gradient(to right, #fdfeff 20%, #e6f0ff 50%);
+}
+.sec2 {
+  padding: 80px 10%;
+  display: flex;
+}
+.round {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.left_sec2 h6 {
+  color: #217bf4;
+  font-size: 18px;
+}
+.left_sec2 h2 {
+  font-size: 40px;
+  width: 60%;
+  margin: 20px 0px;
+}
+.recent {
+  color: #656464;
+  font-size: 18px;
+  width: 70%;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+.img_sec2 {
+  display: flex;
+  gap: 30px;
+}
+.imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.flex{
+    width: 270px;
+    height: 370px;
+    margin-top: 60px;
 }
